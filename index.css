@@ -1,3 +1,104 @@
-#heading{
-    color: red;
+.header{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    background-color: #FFF5EE;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+.logo{
+    width: 150px;
+}
+
+.nav-items > ul{
+    display: flex;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.nav-items > ul > li{
+    padding: 10px;
+    margin: 10px;
+}
+
+.res-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 110px;
+}
+
+.res-card{
+    width: 220px;
+    height: 480px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.search-box{
+    border: black solid 2px;
+    border-radius: 8px;
+    width: 300px;
+    padding: 5px 0px 5px 45px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.res-card:hover{
+    border: solid 1px black;
+    cursor: pointer;
+}
+
+.search{
+    padding: 10px;
+}
+
+.res-logo{
+    width: 100%;
+    /* height: 250px; */
+    border-radius: 5px;
+}
+
+.filter-btn{
+    margin: 10px;
+    background-color: #FFF5EE;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.shimmer-container{
+    display: flex;
+}
+
+.shimmer-card{
+    margin: 20px;
+    width: 200px;
+    height: 400px;
+    background-color: #D0D0D0;
+}
+
+.login{
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+.filter{
+    display: flex;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+}
+
+.user-card{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+/* for using tailwind, delete or comment all classes in index.css and un-comment below configuration and start using tailwind in the app */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
